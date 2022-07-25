@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600&family=Dancing+Script&family=Gentium+Book+Plus:wght@700&display=swap');
+
+/* Fonts */
+/* font-family: 'Bitter', serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Gentium Book Plus', serif; */
+
+:root{
+  --bg: #F7F5F2;
+  --logo: #FF0063;
+  /* --logo: #519259; */
+  --primary: #323232;
+  --text: #191919;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 3rem 3rem 0;
+  background: var(--bg);
+  font-family: 'Bitter', serif;
+}
+
+/* Navbar */
+.nav{
+  display: flex;
+  align-items: center;
+  margin: 0 2rem;
+  font-size: 1.3rem;
+  color: var(--logo);
+  cursor: pointer;
+  text-decoration: none;
+  width: 7rem;
+}
+.nav h1{
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  margin-left: 2px;
+}
+
+/* Footer */
+.footer__wrapper{
+  text-align: center;
+  padding: 4rem 0 1rem 0;
+  font-size: 0.9rem;
+  color: var(--primary);
+}
+.footer__wrapper a{
+  text-decoration: none;
+  color: var(--primary);
+}
+.footer__icons{
+  margin: 0 0.5rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.footer__icons:hover{
+  color: var(--logo);
+}
+.footer__rights{
+  padding: 0.6rem;
+  letter-spacing: 2px;
+}
+.footer__rights span{
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.2rem;
+}
+
+/* Heading */
+.heading__wrapper{
+  text-align: center;
+  padding: 1rem;
+  color: var(--primary);
+}
+.heading__wrapper h1{
+  font-family: 'Gentium Book Plus', serif;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.heading__wrapper p{
+  font-style: italic;
+  font-size: 1rem;
+  font-family: 'Bitter', serif;
+  font-weight: 500;
+}
+
+/* Searchbar */
+.searchbar__wrapper{
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+.searchbar__wrapper input{
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  font-size: 1rem;
+  height: 2rem;
+  width: 25rem;
+  padding: 0.5rem 2rem;
+  background: linear-gradient(35deg, #494949, #313131);
+  color: var(--bg);
+  margin-right: 5px;
+}
+.searchbar__wrapper input:hover{
+  box-shadow: 1px 1px 5px #999;
+}
+.searchbar__wrapper i{
+  position: relative;
+  right: 94%;
+  top: 10%;
+  color: var(--bg);
+  cursor: pointer;
+}
+
+/* Popular/Trending */
+.popular__wrapper, .wine__wrapper{
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+.popular__wrapper h1, .wine__wrapper h1{
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  text-align: left;
+}
+.popular__card-wrapper{
+  padding: 2rem 1rem 0;
+}
+.popular__title, .searchRecipe__content-title{
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popular__card-wrapper span, .searchRecipe__content span{
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--text);
+}
+.popular__card{
+  margin-top: 1rem;
+  min-height: 15rem;
+  min-width: 10rem;
+  border-radius: 1rem;
+  border: 2px solid var(--logo);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 1px 1px 5px #999;
+}
+.popular__card img{
+  border-radius: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  object-fit: cover;
+  cursor: pointer;
+}
+.popular__card img:active{
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+.popular__card img:hover, .searchRecipe__wrapper img:hover{
+  opacity: 0.9;
+}
+
+/* Wine */
+.wine__wrapper{
+  text-align: left;
+}
+.wine__content-wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+}
+.wine__content{
+  width: 50%;
+  color: var(--text);
+  letter-spacing: 1px;
+}
+.wine__content h2{
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.wine__content h3, .wine__rating{
+  font-size: 1rem;
+  font-weight: 500;
+}
+.wine__content .wine__rating{
+  margin-bottom: 1rem;
+}
+.wine__img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.wine__img img{
+  height: 50%;
+  width: 50%;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 5px #999;
+  transition: all 0.2s ease;
+}
+.wine__img img:hover{
+  transform: scale(1.02);
+}
+.wine__content button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  width: 7rem;
+  height: 2.2rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  background: var(--logo);
+  color: var(--bg);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+.wine__content button:active{
+  transform: scale(0.97);
+}
+.wine__content button:hover{
+  transform: translateY(-3px);
+}
+.wine__content button a{
+  margin-right: 3px;
+  text-decoration: none;
+  color: var(--bg);
+}
+.shopping__icon{
+  font-size: 1.1rem;
+}
+
+/* Search Recipe */
+.search{
+  padding: 2rem;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.search__error{
+  color: var(--logo);
+  font-size: 1rem;
+  text-align: center;
+  padding: 2rem;
+  letter-spacing: 0.5px;
+}
+.searchRecipe__wrapper{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+.searchRecipe__content{
+  padding: 1rem;
+}
+.searchRecipe__wrapper img{
+  width: 100%;
+  opacity: 0.8;
+  border-radius: 2rem;
+  box-shadow: 1px 1px 5px #999;
+  cursor: pointer;
+}
+
+/* Recipe */
+.recipe__wrapper{
+  padding: 2rem;
+  display: flex;
+}
+.recipe__title{
+  height: 3rem;
+  width: 30rem;
+  margin-bottom: 2rem;
+}
+.recipe__details h1{
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  color: var(--primary);
+}
+.recipe__instruction{
+  padding: 1rem;
+}
+.recipe__instruction h3, .recipe__content li{
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--text);
+}
+.recipe__details img{
+  width: 25rem;
+  height: 20rem;
+  border: 2px solid var(--logo);
+}
+.recipe__wrapper .active{
+  background: linear-gradient(35deg, #494949, #313131);
+  color: var(--bg);
+}
+.recipe__content{
+  padding: 3rem;
+}
+.recipe__content button{
+  margin: 0 0.5rem 1rem;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  width: 7rem;
+  height: 2.7rem;
+  border-radius: 1rem;
+  background: var(--logo);
+  color: var(--bg);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+.recipe__content ul{
+  padding: 1rem;
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 280px) and (max-width: 479px){
+  /* Nav */
+  .nav{
+    margin: 0;
+    font-size: 1rem;
+  }
+  .heading__wrapper h1{
+    font-size: 2.5rem;
+  }
+  .heading__wrapper p{
+    font-size: 0.8rem;
+  }
+
+  /* Searchbar */
+  .searchbar__wrapper input{
+    font-size: 1rem;
+    width: 15rem;
+  }
+  .searchbar__wrapper i{
+    position: relative;
+    right: 90%;
+    top: 10%;
+  }
+
+  /* Wine */
+  .wine__wrapper h1, .popular__wrapper h1{
+    font-size: 1.4rem;
+    text-align: center;
+    width: 100%;
+  }
+  .wine__content-wrapper {
+    display: grid;
+    grid-template-rows: 1fr;
+    width: 100%;
+  }
+  .wine__content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .wine__description{
+    text-align: justify;
+  }
+  .wine__content h2{
+    font-size: 1.1rem;
+  }
+  .wine__img{
+    text-align: center;
+    width: 100%;
+  }
+  .wine__img img{
+    width: 10rem;
+  }
+
+  /* Popular */
+  .popular__card button{
+    left: 27%;
+  }
+
+  
+}
+@media screen and (min-width: 320px) and (max-width: 912px){
+  /* Recipe */
+  .recipe__wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+  .recipe__details img{
+    width: 13rem;
+    height: 10rem;
+    margin-bottom: 2rem;
+  }
+  .recipe__title{
+    width: 13rem;
+    margin-bottom: 2rem;
+  }
+  .recipe__details h1{
+    font-size: 1.4rem;
+    text-align: left;
+  }
+  .recipe__content{
+    padding: 0;
+  }
+  .recipe__content button{
+    width: 5rem;
+    height: 2.5rem;
+    font-size: 0.8rem;
+  }
+  .recipe__instruction{
+    margin-top: 1rem;
+    padding: 0rem;
+    text-align: justify;
+  }
+}
+@media screen and (max-width: 280px){
+  .recipe__wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .recipe__details img{
+    width: 11rem;
+    height: 10rem;
+    margin-bottom: 2rem;
+  }
+  .recipe__title{
+    width: 11rem;
+    margin-bottom: 1rem;
+  }
+  .recipe__details h1{
+    font-size: 1.1rem;
+    text-align: left;
+  }
+  .recipe__content{
+    padding: 0;
+    width: 12rem;
+  }
+  .recipe__content button{
+    width: 5rem;
+    height: 2.5rem;
+    font-size: 0.8rem;
+  }
+  .recipe__instruction{
+    margin-top: 1rem;
+    padding: 0rem;
+    text-align: justify;
+  }
+}
