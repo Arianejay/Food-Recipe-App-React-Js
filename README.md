@@ -14,6 +14,8 @@
 ## :star2: About the Project
 A Food Recipe App built with React JS, it fetches recipe data from a third party API.
 
+Demo: https://zesty-sunflower-834a2b.netlify.app
+
 <!-- Screenshots -->
 ### :camera: Screenshots
 
