@@ -1,13 +1,64 @@
-# Food-Recipe-App-React-Js
+<!-- Table of Contents -->
+# :notebook_with_decorative_cover: Table of Contents
+
+- [About the Project](#star2-about-the-project)
+  * [Screenshots](#camera-screenshots)
+  * [Tech Stack](#space_invader-tech-stack)
+  * [Features](#dart-features)
+- [Roadmap](#compass-roadmap)
+- [Acknowledgements](#gem-acknowledgements)
+
+  
+
+<!-- About the Project -->
+## :star2: About the Project
 A Food Recipe App built with React JS, it fetches recipe data from a third party API.
 
-You can search ingredients, wine pairings, and on how to do a certain recipe.
+<!-- Screenshots -->
+### :camera: Screenshots
 
-Demo here: https://zesty-sunflower-834a2b.netlify.app
+<div align="center"> 
+  <img src="https://user-images.githubusercontent.com/103638111/180783403-c0bc53dc-cfe4-466e-bfbf-7ef8119fd4ad.png" alt="screenshot" />
+</div>
 
-<img width="312" alt="home" src="https://user-images.githubusercontent.com/103638111/180783403-c0bc53dc-cfe4-466e-bfbf-7ef8119fd4ad.png">
-<img width="302" alt="instructions" src="https://user-images.githubusercontent.com/103638111/180783415-0915e252-e4ef-4d3c-9e69-44a27ffa13e6.png">
-<img width="333" alt="search" src="https://user-images.githubusercontent.com/103638111/180783418-3b2d32c9-b0bd-417d-903f-aaf0706c4371.png">
+
+<!-- TechStack -->
+### :space_invader: Tech Stack
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>API</summary>
+  <ul>
+    <li><a href="https://spoonacular.com/">Spoonacular</a></li>
+  </ul>
+</details>
+
+
+<!-- Features -->
+### :dart: Features
+
+- Featured Wine
+- Trending Recipes
+- Ingredients and Instructions page
+- Search recipe 
+
+<!-- Roadmap -->
+## :compass: Roadmap
+
+* [ ] Add instructions videos if it has data
+
+<!-- Acknowledgments -->
+## :gem: Acknowledgements
+
+
+ - This project is inspired by DevEd's recipe app project. Link to project: https://www.youtube.com/watch?v=xc4uOzlndAk&t=1s
+
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
